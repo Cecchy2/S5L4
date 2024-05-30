@@ -27,14 +27,13 @@ h2{
 .postIt{
     width: 250px;
     height: 200px;
-    background-color:rgb(253, 253, 203) ;
-    box-shadow: inset 0px -57px 65px -41px rgba(0,0,0,0.75);
+    background-color:rgb(253, 253, 203); 
+    box-shadow:  inset -1px -4px 7px 0px rgba(0, 0, 0, 0.75);
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;  
-    box-shadow: 1px 8px 16px -2px rgba(0,0,0,0.3);
 
 }
 .postIt:nth-of-type(1) {
@@ -132,7 +131,7 @@ h2{
     }
 }
 .animate{
-    animation: rotateAndGo 3s forwards
+    animation: rotateAndGo 3s forwards 
 }
 
 
