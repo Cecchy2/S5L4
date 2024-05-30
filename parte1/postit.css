@@ -18,8 +18,10 @@ h2{
     margin-block: 10%;
     justify-content: space-around;
     background-color: rgb(102, 102, 102);
-    min-height: 1000px;
+    min-height: 620px;
     align-content: center;
+    border: solid 10px black;
+    box-shadow: 3px 10px 11px -4px rgba(0,0,0,0.75);;
     
 }
 
@@ -29,7 +31,7 @@ h2{
     height: 200px;
     background-color:rgb(253, 253, 203); 
     box-shadow:  inset -1px -4px 7px 0px rgba(0, 0, 0, 0.75), 
-    3px 10px 11px -4px rgba(0,0,0,0.75);
+    0px 0px 11px -4px rgba(0,0,0,0.75);
     
     text-align: center;
     display: flex;
