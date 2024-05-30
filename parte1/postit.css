@@ -28,7 +28,9 @@ h2{
     width: 250px;
     height: 200px;
     background-color:rgb(253, 253, 203); 
-    box-shadow:  inset -1px -4px 7px 0px rgba(0, 0, 0, 0.75);
+    box-shadow:  inset -1px -4px 7px 0px rgba(0, 0, 0, 0.75), 
+    3px 10px 11px -4px rgba(0,0,0,0.75);
+    
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -49,10 +51,12 @@ h2{
 .postIt:nth-of-type(2) {
     background-color: rgb(202, 252, 203);
     transition: transform 1s, background-color 3s ;
+    transform: rotate(12deg);
 }
 .postIt:nth-of-type(2):hover {
     transform: scale(2,2);
     background-color: blueviolet;
+    
 }
 
 @keyframes translate {
@@ -71,6 +75,7 @@ h2{
     background-color: rgb(201, 201, 247);
     transform: rotate(354deg);
     animation: translate 5s both 1s;
+
 }
 
 @keyframes RotZoom {
@@ -85,7 +90,7 @@ h2{
         background-color: aquamarine;
     }
     100% {
-        transform: rotate(1deg) scale(1,1) ;
+        transform: rotate(354deg) scale(1,1) ;
         background-color: rgb(255, 127, 127);
     }
 }
@@ -127,7 +132,7 @@ h2{
         transform: rotate(720deg) translate(200px, 200px);
     }
     100% {
-        transform: rotate(1080deg) translate(0, 0);
+        transform: rotate(354deg) translate(0, 0);
     }
 }
 .animate{
