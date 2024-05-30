@@ -1,0 +1,25 @@
+*,
+* ::before
+*::after{
+    box-sizing: border-box;
+    
+}
+body{
+    font-family: "Pacifico", cursive;
+}
+h2{
+    font-size: 27px;
+}
+
+.postIt{
+    width: 250px;
+    height: 200px;
+    background-color:rgb(253, 253, 203) ;
+    box-shadow: inset 0px -57px 65px -41px rgba(0,0,0,0.75);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+
+}
