@@ -23,6 +23,7 @@ h2{
     
 }
 
+
 .postIt{
     width: 250px;
     height: 200px;
@@ -118,6 +119,23 @@ h2{
     background-color: rgb(201, 201, 247);
     transform: rotate(354deg);
 }
+
+@keyframes rotateAndGo {
+    0% {
+        transform: rotate(354deg) translate(0, 0);
+    }
+    50% {
+        transform: rotate(720deg) translate(200px, 200px);
+    }
+    100% {
+        transform: rotate(1080deg) translate(0, 0);
+    }
+}
+.animate{
+    animation: rotateAndGo 3s forwards
+}
+
+
 
 
 .postIt:nth-of-type(7) {

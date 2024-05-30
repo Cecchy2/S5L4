@@ -16,8 +16,6 @@ body{
     font-size: 25px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-
-
 #testoAlternato {
     border: solid 5px grey;
     width: 500px;
@@ -25,8 +23,7 @@ body{
     margin-block: 25%;
     padding: 20px;
     overflow: hidden;
-    position: relative;
-    
+    position: relative;    
 }
 #testoAlternato i {
     position: absolute;
@@ -39,19 +36,16 @@ body{
     color: aquamarine;
     font-weight: bold;
 }
-
 #testoAlternato i:nth-of-type(2) {
     animation-delay: 4s;
     color: rgb(100, 39, 39);
     font-weight: bold;
 }
-
 #testoAlternato i:nth-of-type(3) {
     animation-delay: 8s;
     color: rgb(92, 158, 100);
     font-weight: bold;
 }
-
 @keyframes changingWords {
     0% {
         transform: translateY(-400px);
