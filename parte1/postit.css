@@ -38,6 +38,7 @@ h2{
     flex-direction: column;
     justify-content: center;
     align-items: center;  
+    cursor: pointer;
 
 }
 .postIt:nth-of-type(1) {
@@ -63,13 +64,13 @@ h2{
 
 @keyframes translate {
     0% {
-        transform: translatey(1px);
+        transform: translateY(1px);
     }
     50% {
-        transform: translatey(500px);
+        transform: translateY(500px);
     }
     100%{
-        transform: translatey(1px);
+        transform: translateY(1px);
     }
 }
 
@@ -104,10 +105,10 @@ h2{
 
 @keyframes run {
     0% {
-        transform: translatex(1px);
+        transform: translateX(1px);
     }
     50% {
-        transform: translatex(1200px);
+        transform: translateX(1200px);
     }
     100% {
         transform: translateX(-10px);
@@ -120,37 +121,47 @@ h2{
     animation: run 4s both 1.5s;
 }
 
+@keyframes rotatearun {
+    0% {
+        transform: rotate(0deg) translate(0, 0);
+    }
+    25% {
+        transform: rotate(90deg) translate(calc(100vw - 250px), 0);
+    }
+    50% {
+        transform: rotate(180deg) translate(calc(100vw - 250px), calc(100vh - 200px));
+    }
+    75% {
+        transform: rotate(270deg) translate(0, calc(100vh - 200px));
+    }
+    100% {
+        transform: rotate(360deg) translate(0, 0);
+    }
+}
+
+.animated {
+    animation: rotatearun 5s  linear;
+}
 
 .postIt:nth-of-type(6) {
     background-color: rgb(201, 201, 247);
     transform: rotate(354deg);
 }
 
-@keyframes rotateAndGo {
-    0% {
-        transform: rotate(354deg) translate(0, 0);
-    }
-    50% {
-        transform: rotate(720deg) translate(200px, 200px);
-    }
-    100% {
-        transform: rotate(354deg) translate(0, 0);
-    }
-}
-.animate{
-    animation: rotateAndGo 3s forwards 
-}
-
-
 
 
 .postIt:nth-of-type(7) {
     background-color: rgb(253, 253, 203);
     transform: rotate(9deg);
+    transition: transform 2s ease-in-out, background-color 3s;
 }
 
+.postIt:nth-of-type(7):hover {
+    transform: rotate(720deg) scale(2,2);
+    background-color: aqua;
+}
 
 .postIt:nth-of-type(8) {
     background-color: rgb(202, 252, 203);
-    transform: rotate(6deg);
+    transform: rotate(300deg);
 }

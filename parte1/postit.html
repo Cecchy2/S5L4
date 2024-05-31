@@ -43,7 +43,7 @@
         <h2>Task#5</h2>
         <p>Ombreggiarli</p>
       </div>
-      <div class="postIt animate" onclick="">
+      <div class="postIt animate">
         <h2>Task#6</h2>
         <p>Ruotarli</p>
       </div>
@@ -57,7 +57,9 @@
       </div>
     </div>
     <script>
-      const postIt = document.querySelector("");
+      document.querySelector(".postIt.animate").onclick = function (event) {
+        this.classList.add("animated");
+      };
     </script>
   </body>
 </html>
